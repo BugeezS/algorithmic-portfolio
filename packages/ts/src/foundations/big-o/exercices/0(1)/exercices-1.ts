@@ -31,3 +31,24 @@ function swapTheFirstTwoElements(arr: number[]) : number[] | undefined{
 
     return arr;
 }
+
+//Exercice 3 : Simple Dictionary Access 
+
+type User = {
+    name: string;
+    age: number;
+}
+
+function getUserAge(user: User) : number {
+    return user.age;
+}
+
+//Exercice 4 : Push & Pop (from End)
+
+function push(arr: number[], input: number){
+    arr.push(input);
+}
+
+function pop(arr: number[]) {
+    arr.pop();
+}
