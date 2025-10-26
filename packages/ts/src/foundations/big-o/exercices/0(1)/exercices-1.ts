@@ -12,8 +12,22 @@
 
 //Exercice 1 : Access by Index
 
-function returnLastIndexElements(arr: string[]) {
+function returnLastIndexElements(arr: string[]) : string | undefined {
     if(arr.length === 0) return undefined;
     const index = arr.length - 1;
     return arr[index];
+}
+
+//Exercice 2 : Fixed Number of Operations
+
+function swapTheFirstTwoElements(arr: number[]) : number[] | undefined{
+    if(arr.length < 2) return undefined;
+
+    const firsIndex = arr[0]!;
+    const secondIndex = arr[1]!;
+    
+    arr[0] = secondIndex;
+    arr[1] = firsIndex;
+
+    return arr;
 }
