@@ -25,3 +25,20 @@ function findMaxValueInArray(arr: number[]) : number | undefined {
     }
     return max;
 }
+
+
+//Exercice 3 : Write a function that counts how many times a target number appears in an array.
+
+function countTargetTimeInArray(arr: number[], target: number) : number | undefined {
+    if(!arr || !target) return undefined;
+
+    let count: number = 0;
+
+    for(let i = 0; i < arr.length ; i ++){
+        if(arr[i] === target) {
+            count ++
+        }
+    }
+
+    return count;
+}
